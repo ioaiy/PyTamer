@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %}All Submissions | {% endblock %} {%
+block content %}
+<div class="content">
+    <div id="pd-table">
+      <table class="table">
+        <tr>
+          <!-- <th>ID</th> -->
+          <th class="th-1">New URL</th>
+          <th>URL</th>
+          <th class="th-3">Hits</th>
+          <!--    <th>Created</th> -->
+        </tr>
+        {% for url in stats.items %}
+        <tr>
+          <!-- <td>{{ url.id }}</td> -->
+          <td>
+            <img src="{{ url_for('static', filename="chain.svg") }}" width=16px alt=""> /
+            <a href="{{ url_for('index') }}{{ url.new }}" target="_blank">{{ url.new }}</a>
+          </td>
+          <td class="old-url">
+            <img src="https://www.google.com/s2/favicons?domain={{ url.old }}" alt="favicon"/>
+            {{ url.old }}
+          </td>
+          <td class="td-3">{{ url.hits }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+</div>
+
+<div style="text-align: center; padding-top: 5px; font-weight: 600;">
+  <p class="mr-table" style="color:#777">
+    {% if stats.has_prev %}
+    <a class="next" href="{{url_for('stats',page=stats.prev_num)}}">&lt; Previous </a>
+    {% else %} &lt; Previous {% endif %} {% if stats.has_next %}
+    <a class="previous" href="{{url_for('stats',page=stats.next_num)}}">Next &gt;</a>
+    {% else %} Next &gt; {% endif %}
+  </p>
+</div>
+
+{% endblock %}
