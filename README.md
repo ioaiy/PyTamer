@@ -13,5 +13,5 @@ This app shortened long links
 - There is a button to automatically copy the shortened URL to clipboard.
 - Has an option to use Recaptcha to prevent spambots.
 
-![Screenshot](https://github.com/ioaiy/FLask-URL/blob/master/pytmtk.gif)
+![Screenshot](https://github.com/ioaiy/Flask_URL/blob/master/pytmtk.gif)
 
