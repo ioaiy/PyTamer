@@ -1,6 +1,6 @@
 alembic==1.4.2
 aniso8601==8.0.0
-awsebcli==3.17.1
+# awsebcli==3.17.1
 botocore==1.14.17
 cement==2.8.2
 certifi==2020.4.5.1
