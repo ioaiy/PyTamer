@@ -1,7 +1,7 @@
 # Flask URL-Shortener
 This app shortened long links
 
-[Live Demo](https://flask-shortener.herokuapp.com/)
+[Live Demo](https://pytamer.herokuapp.com/)
 
 ## Features
 
