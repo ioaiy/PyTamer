@@ -1,5 +1,5 @@
 # Flask URL-Shortener
-This app shortened long links
+This app on Flask shortened long links
 
 [Live Demo](https://pytamer.herokuapp.com/)
 
